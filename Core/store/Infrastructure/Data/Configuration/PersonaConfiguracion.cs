@@ -26,7 +26,26 @@ namespace Persistencia.Data.Configuration;
 
             builder.HasOne(p => p.IdTipoPersona)
             .WithMany(p => p.Personas)
-            .HasForeignKey(p=> p.IdRegionFk);
+            .HasForeignKey(p=> p.IdTipoPersonaFk);
+
+            builder
+            .HasMany(p => p.Productos)
+            .WithMany(p => p.Personas)
+            .UsingEntity <ProductoPersona>
+            (
+                j => j 
+                    .HasOne(pt => pt.Producto)
+                    .WithMany(t => t.ProductosPersonas)
+                    .HasForeignKey(pt.IdProductoFk),
+                j => j 
+                    .HasOne(pt => pt.Persona)
+                    .WithMany(t => t.ProductosPersonas)
+                    .HasForeignKey(pt.IdPersonaFk),
+                j => 
+                {
+                    j.HasKey(t => new {t.IdProductoFk, t.IdPersonaFk})
+                }
+            );
 
 
             /**builder.Property(p => p.IdPersona)
