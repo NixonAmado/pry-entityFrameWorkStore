@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj": {}
+    "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj": {
+    "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\obj\\",
+        "projectPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\APT01-62\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-62\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -42,6 +42,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -51,6 +55,8 @@
               "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },
@@ -82,17 +88,17 @@
         }
       }
     },
-    "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj": {
+    "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\obj\\",
+        "projectPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\APT01-62\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-62\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -141,17 +147,17 @@
         }
       }
     },
-    "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\APT01-62\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-62\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -163,8 +169,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\nixon\\OneDrive\\Documentos\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj"
+              "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\APT01-62\\Documents\\c#\\pry-entityFrameWorkStore\\Core\\store\\Core\\Core.csproj"
               }
             }
           }

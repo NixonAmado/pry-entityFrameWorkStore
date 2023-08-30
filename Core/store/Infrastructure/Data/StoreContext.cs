@@ -1,8 +1,9 @@
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.EntityFrameworkCore;
 using Core.Entities;
-namespace Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Reflection;
 
+namespace Infrastructure.Data;
 public class StoreContext : DbContext
 {
     public StoreContext(DbContextOptions <StoreContext> options) : base(options)
@@ -16,5 +17,10 @@ public class StoreContext : DbContext
     public DbSet<TipoPersona>? TiposPersona { get; set; }
     public DbSet<ProductoPersona>? PersonaProductos { get; set; }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+    }
 
 }

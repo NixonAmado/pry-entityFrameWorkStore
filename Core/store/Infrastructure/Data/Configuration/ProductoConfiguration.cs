@@ -21,13 +21,12 @@ public class ProductoConfiguration : IEntityTypeConfiguration<Producto>
 
             builder.Property(p=> p.StockMin)
             .IsRequired()
-            .HasMaxLength(5);
+            .HasMaxLength(5)
             .HasColumnType("int");
 
 
             builder.Property(p=> p.StockMax)
-            .IsNullable()
-            .HasMaxLength(5);
+            .HasMaxLength(5)
             .HasColumnType("int");
 
             builder.Property(p => p.Stock)

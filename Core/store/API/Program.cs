@@ -2,9 +2,10 @@
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using API.Extensions;
+using System.Reflection;
 
-
-internal class Program
+internal class Programa
 {
     private static void Main(string[] args)
     {
@@ -13,6 +14,10 @@ internal class Program
         // Add services to the container.
 
         builder.Services.AddControllers();
+        //enlazar el corrs
+        builder.Services.ConfigureCors();
+        builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
+        builder.Services.AddAplicationServices();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddDbContext<StoreContext>(optionsBuilder =>
         {
@@ -33,7 +38,8 @@ internal class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
+        //Usar el cors
+        app.UseCors("CorsPolicy");
         app.UseHttpsRedirection();
 
         app.UseAuthorization();

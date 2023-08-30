@@ -1,15 +1,18 @@
-namespace Infrastructure.Data.Configuration
 using Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-    public class TipoPersonaConfiguration: IEntityTypeConfiguration<TipoPersona> 
+
+namespace Infrastructure.Data.Configuration;
+    public class TipoPersonaConfiguration : IEntityTypeConfiguration<TipoPersona> 
     {
-        public void Configure(EntityTypeBuilder<TipoPersona>)
+        public void Configure(EntityTypeBuilder<TipoPersona> builder)
         {
             builder.ToTable("TipoPersona");
             builder.Property(p => p.Descripcion)
-            .IsRequired();
+            .IsRequired()
             .HasMaxLength(50);
-            builder.HasKey(p => p.IdTipoPersona);
+            builder.HasKey(p => p.IdTPersona);
 
 
         }	

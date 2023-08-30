@@ -1,8 +1,9 @@
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistencia.Data.Configuration;
+namespace Infrastructure.Data.Configuration;
 
     public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
     {
@@ -12,10 +13,6 @@ namespace Persistencia.Data.Configuration;
             // utilizando el objeto 'builder'.
             builder.ToTable("Persona");
 
-            builder.Property(p => p.IdPersona)
-            .IsRequired()
-            .HasMaxLength(15);
-            
             builder.Property(p => p.FechaNacimiento)
             .IsRequired()
             .HasColumnType("date");
@@ -24,7 +21,7 @@ namespace Persistencia.Data.Configuration;
             .WithMany(p => p.Personas)
             .HasForeignKey(p=> p.IdRegionFk);
 
-            builder.HasOne(p => p.IdTipoPersona)
+            builder.HasOne(p => p.TipoPersona)
             .WithMany(p => p.Personas)
             .HasForeignKey(p=> p.IdTipoPersonaFk);
 
@@ -36,14 +33,14 @@ namespace Persistencia.Data.Configuration;
                 j => j 
                     .HasOne(pt => pt.Producto)
                     .WithMany(t => t.ProductosPersonas)
-                    .HasForeignKey(pt.IdProductoFk),
+                    .HasForeignKey(pt => pt.IdProductoFk),
                 j => j 
                     .HasOne(pt => pt.Persona)
                     .WithMany(t => t.ProductosPersonas)
-                    .HasForeignKey(pt.IdPersonaFk),
+                    .HasForeignKey(pt => pt.IdPersonaFk),
                 j => 
                 {
-                    j.HasKey(t => new {t.IdProductoFk, t.IdPersonaFk})
+                    j.HasKey(t => new {t.IdProductoFk, t.IdPersonaFk});
                 }
             );
 
