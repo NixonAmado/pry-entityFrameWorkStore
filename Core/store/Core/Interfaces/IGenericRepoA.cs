@@ -1,7 +1,7 @@
 using Core.Entities;
 using System.Linq.Expressions;
 namespace Core.Interfaces;
-
+//definicion
     public interface IGenericRepoA<T> where T : BaseEntity
     {
         Task<T> GetByIdAsync(int id);

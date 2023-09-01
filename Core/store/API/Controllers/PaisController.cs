@@ -6,9 +6,13 @@ using Core.Interfaces;
 using Infrastructure.UnitWork;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace API.Controllers;
+[ApiVersion("1.0")]
+[ApiVersion("1.1")]
     public class PaisController : BaseApiController
     {
+
         private readonly IUnitOfWork unitOfWork;
 
     public IMapper Mapper { get; set; }
@@ -21,7 +25,7 @@ namespace API.Controllers;
 
         //ENDPOINT
         [HttpGet]
-        //[MapToApiVersion(1.1)]
+        [MapToApiVersion("1.1")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         //Va a obtener todos los paises de la bd
@@ -32,6 +36,7 @@ namespace API.Controllers;
         }
         
         //sobrecarga de funciones// sus argumentos tienen que ser diferentes 
+        [MapToApiVersion("1.1")]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -42,6 +47,7 @@ namespace API.Controllers;
         }
 
         [HttpPost]
+        [MapToApiVersion("1.1")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
@@ -59,6 +65,7 @@ namespace API.Controllers;
         }
 
         [HttpPut("{id}")]
+        [MapToApiVersion("1.1")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<PaisDto>> Put(int id, PaisDto paisDto)

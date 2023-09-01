@@ -10,6 +10,9 @@
 /home/apolT02-062/Documents/pry-entityFrameWorkStore/Core/store/Core/obj/Debug/net7.0/refint/Core.dll
 /home/apolT02-062/Documents/pry-entityFrameWorkStore/Core/store/Core/obj/Debug/net7.0/Core.pdb
 /home/apolT02-062/Documents/pry-entityFrameWorkStore/Core/store/Core/obj/Debug/net7.0/ref/Core.dll
+C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\bin\Debug\net7.0\Core.dll
+C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\bin\Debug\net7.0\Core.pdb
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
@@ -18,7 +21,4 @@ C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debu
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\Core.dll
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\refint\Core.dll
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\Core.pdb
-C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\bin\Debug\net7.0\Core.deps.json
-C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\bin\Debug\net7.0\Core.dll
-C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\bin\Debug\net7.0\Core.pdb
 C:\Users\APT01-62\Documents\c#\pry-entityFrameWorkStore\Core\store\Core\obj\Debug\net7.0\ref\Core.dll

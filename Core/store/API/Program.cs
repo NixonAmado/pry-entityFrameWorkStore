@@ -1,9 +1,15 @@
 //contenedor de dependencias
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Infrastructure.Data;
+using API;
+
 using Microsoft.EntityFrameworkCore;
 using API.Extensions;
 using System.Reflection;
+using AspNetCoreRateLimit;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc;
+
 
 internal class Programa
 {
@@ -16,6 +22,14 @@ internal class Programa
         builder.Services.AddControllers();
         //enlazar el corrs
         builder.Services.ConfigureCors();
+        builder.Services.ConfigureRateLimiting();
+        builder.Services.ConfigureVersioning();        
+        //builder.Services.AddApiVersioning();
+        //builder.Services.AddApiVersioning(options => ConfigureApiVersioning(options));
+
+
+
+
         builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
         builder.Services.AddAplicationServices();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -40,6 +54,9 @@ internal class Programa
         }
         //Usar el cors
         app.UseCors("CorsPolicy");
+        
+        app.UseIpRateLimiting();//--se agrega con el builder.Services.ConfigureRateLimiting();
+        app.UseAuthorization();
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
